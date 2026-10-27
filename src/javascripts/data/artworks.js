@@ -1,6 +1,6 @@
 import lightImage from '../../assets/images/light.png'
-import exhibitionImage from '../../assets/images/non-places.png'
-import theRoomImage from '../../assets/images/the-room.png'
+import exhibitionImage from '../../assets/images/non-places.jpg'
+import theRoomImage from '../../assets/images/the-room.jpg'
 import movementImage from '../../assets/images/movement.png'
 import perspectiveImage from '../../assets/images/perspective.png'
 

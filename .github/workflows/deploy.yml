@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 concurrency:
@@ -16,34 +16,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Save original Figma images locally once
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p src/assets/images
-          prefix="https://www.figma.com/api/mcp/asset/78051b57-1c60-4381-95a7-d8e9cc8f81c2"
-          import_if_missing() {
-            if [ ! -s "src/assets/images/$1" ]; then
-              curl --fail --location --retry 3 --max-time 45 --silent --show-error "$prefix/$2" -o "src/assets/images/$1"
-            fi
-          }
-          import_if_missing light.png 5c746.png
-          import_if_missing non-places.png 1f29c.png
-          import_if_missing the-room.png 535d4.png
-          import_if_missing movement.png 9d378.png
-          import_if_missing perspective.png 17311.png
-          for source in src/assets/images/*.png; do
-            test -s "$source"
-            file "$source"
-            file --mime-type "$source" | grep -q 'image/'
-          done
-          if [ -n "$(git status --porcelain -- src/assets/images)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/assets/images
-            git commit -m "Store original Figma artwork assets locally"
-            git push origin HEAD:main
-          fi
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
