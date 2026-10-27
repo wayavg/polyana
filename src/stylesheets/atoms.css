@@ -27,5 +27,5 @@ button,input,textarea{border-radius:0}button{cursor:pointer}h1,h2,h3,p,figure{ma
 textarea.a-input{height:auto;resize:vertical}
 .form-field__error{color:var(--color-error);font:400 13px/18px var(--font-body);margin:4px 0 0}
 .a-checkbox{display:flex;align-items:center;gap:8px}.a-selection-indicator{display:none}
-.selectable-option{flex:0 0 auto;height:44px;border:1px solid var(--color-border);background:#fff;padding:0 11px;font:400 16px/24px var(--font-body);color:var(--color-ink);white-space:nowrap;text-align:left}
+.selectable-option{flex:0 0 auto;height:44px;border:1px solid var(--color-border);background:#fff;padding:0 11px;font:400 16px/24px var(--font-body);color:var(--color-ink);white-space:nowrap;text-align:center}
 .selectable-option.is-selected{background:var(--color-ink);border-color:var(--color-ink);color:#fff;font-weight:700}

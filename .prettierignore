@@ -1,0 +1,5 @@
+node_modules/
+docs/
+dev_build/
+src/assets/
+.github/workflows/format-once.yml

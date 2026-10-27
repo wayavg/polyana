@@ -32,9 +32,7 @@
 .purchase-dialog__fields{margin-top:20px}
 .purchase-dialog__fields>.form-field+.form-field{margin-top:16px}
 .purchase-dialog__actions{margin-top:34px;display:flex;gap:31px;align-items:center}
-.purchase-dialog__actions .a-button--solid{width:354px;flex:0 0 354px;justify-content:flex-start}
-.purchase-dialog__actions .a-button--text{font-size:14px;line-height:22px;white-space:nowrap}
-.purchase-dialog__disclaimer{color:#6b6b6b;font:400 12px/18px var(--font-body);margin-top:12px}
+.purchase-dialog__actions .a-button--solid{width:354px;flex:0 0 354px;justify-content:center}
 .purchase-success{padding-top:44px;display:grid;gap:24px;align-items:start}
 .purchase-success>.type--body{max-width:640px}
 .purchase-success .a-button--solid{justify-self:start;min-width:180px}

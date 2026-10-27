@@ -54,10 +54,6 @@ export default function O_PurchaseDialog({ artwork, isOpen, onClose }) {
     setErrors(nextErrors)
     if (Object.keys(nextErrors).length === 0) setSubmitted(true)
   }
-  function fillExample() {
-    setForm({ purpose: 'project', space: 'restaurant', city: 'Санкт-Петербург', name: 'Александра', contact: '@example', context: 'Хотелось бы уточнить условия размещения и сроки.' })
-    setErrors({})
-  }
   function handleBackdrop(event) { if (event.target === event.currentTarget) onClose() }
 
   return <div className="purchase-overlay" onMouseDown={handleBackdrop}>
@@ -97,9 +93,7 @@ export default function O_PurchaseDialog({ artwork, isOpen, onClose }) {
         </div>
         <div className="purchase-dialog__actions">
           <A_Button variant="solid" arrow type="submit">ОТПРАВИТЬ ЗАПРОС</A_Button>
-          <A_Button variant="text" onClick={fillExample} arrow>ПРИМЕР ЗАПОЛНЕНИЯ</A_Button>
         </div>
-        <p className="purchase-dialog__disclaimer">Демонстрационная форма · данные не отправляются. Цена из архива не подтверждает наличие.</p>
       </form>}
     </div>
   </div>
