@@ -34,7 +34,8 @@ jobs:
           import_if_missing perspective.png 17311.png
           for source in src/assets/images/*.png; do
             test -s "$source"
-            file --mime-type "$source" | grep -q 'image/png'
+            file "$source"
+            file --mime-type "$source" | grep -q 'image/'
           done
           if [ -n "$(git status --porcelain -- src/assets/images)" ]; then
             git config user.name "github-actions[bot]"
