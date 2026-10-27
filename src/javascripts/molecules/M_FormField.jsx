@@ -13,6 +13,8 @@ export default function M_FormField({ id, label, required, error, ...inputProps 
       </A_Label>
       <A_Input
         id={id}
+        name={id}
+        required={required}
         error={error}
         aria-describedby={error ? id + '-error' : undefined}
         {...inputProps}

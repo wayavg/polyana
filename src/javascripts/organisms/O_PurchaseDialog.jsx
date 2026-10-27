@@ -52,7 +52,9 @@ export default function O_PurchaseDialog({ artwork, isOpen, onClose }) {
     setForm((current) => ({
       ...current,
       [name]: value,
-      ...(name === 'purpose' && value !== 'project' ? { space: '' } : {})
+      ...(name === 'purpose' && value !== current.purpose
+        ? { space: '', context: '' }
+        : {})
     }))
     setErrors((current) => ({ ...current, [name]: undefined }))
   }
