@@ -20,14 +20,16 @@
 
 ## Запуск
 
-Требуется Node.js 20+.
+Требуются Node.js 20+ и Yarn Classic 1.22.x. Файл `yarn.lock` зафиксирован в GitHub, поэтому версии зависимостей воспроизводимы.
 
-    npm install
-    npm start
+После первого `yarn install` папка `node_modules` сохраняется на компьютере: при обычном `git pull` установка не нужна, достаточно `yarn start`. Повторный `yarn install` потребуется на новом компьютере или после изменений зависимостей.
+
+    yarn install
+    yarn start
 
 Production-сборка:
 
-    npm run build
+    yarn build
 
 Webpack создаёт папку docs/. GitHub Actions собирает docs/ и публикует её в GitHub Pages. В Settings → Pages выберите источник публикации **GitHub Actions**. Действующий адрес страницы будет доступен после успешного выполнения deploy.
 
