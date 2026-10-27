@@ -47,5 +47,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin({ filename: 'assets/css/[name].[contenthash].css' }), ...htmlPages]
+  plugins: [
+    new MiniCssExtractPlugin({ filename: 'assets/css/[name].[contenthash].css' }),
+    ...htmlPages
+  ]
 }

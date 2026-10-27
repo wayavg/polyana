@@ -1,8 +1,29 @@
 :root {
- --color-ink:#0e0e0e;--color-body:#0a0a0a;--color-muted:#616161;--color-soft:#6e6e6e;
- --color-rule:#ccc;--color-border:#b0b0b0;--color-white:#fff;--color-error:#9f2424;
- --font-heading:'Geologica',Arial,sans-serif;--font-body:'Golos Text',Arial,sans-serif;
- --type-display:100px;--type-section:64px;--type-subtitle:40px;--type-work:32px;--type-body:22px;--type-ui:16px;
- --line-display:117px;--line-section:80px;--line-subtitle:52px;--line-work:42px;--line-body:34px;--line-ui:24px;
- --layout-width:1440px;--layout-gutter:64px;--layout-content:1312px;--space-unit:4px;--stroke:1px;
+  --color-ink: #0e0e0e;
+  --color-body: #0a0a0a;
+  --color-muted: #616161;
+  --color-soft: #6e6e6e;
+  --color-rule: #ccc;
+  --color-border: #b0b0b0;
+  --color-white: #fff;
+  --color-error: #9f2424;
+  --font-heading: 'Geologica', Arial, sans-serif;
+  --font-body: 'Golos Text', Arial, sans-serif;
+  --type-display: 100px;
+  --type-section: 64px;
+  --type-subtitle: 40px;
+  --type-work: 32px;
+  --type-body: 22px;
+  --type-ui: 16px;
+  --line-display: 117px;
+  --line-section: 80px;
+  --line-subtitle: 52px;
+  --line-work: 42px;
+  --line-body: 34px;
+  --line-ui: 24px;
+  --layout-width: 1440px;
+  --layout-gutter: 64px;
+  --layout-content: 1312px;
+  --space-unit: 4px;
+  --stroke: 1px;
 }

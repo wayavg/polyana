@@ -1,80 +1,471 @@
-.artwork-page{position:relative;width:1440px;height:6207px;margin:0 auto;overflow:hidden;background:white}
-.site-header{position:absolute;left:64px;top:0;width:1312px;height:97px}.site-header__brand{position:absolute;top:34px;left:0}.site-header__menu{position:absolute;top:42px;right:0;font-size:17px;line-height:25px}.site-header__rule{position:absolute;bottom:0}
-.artwork-hero{position:absolute;top:145px;left:0;width:1440px;height:800px}
-.artwork-hero__back{position:absolute;left:64px;top:0}
-.artwork-hero__title{position:absolute;top:96px;left:58px;width:290px}
-.artwork-hero__artist{position:absolute;top:249px;left:64px;width:280px}
-.artwork-hero__year{position:absolute;top:289px;left:64px;color:var(--color-soft);font-size:18px;line-height:28px}
-.artwork-metadata{position:absolute;top:406px;left:64px;width:264px}
-.artwork-metadata .a-divider{margin-bottom:24px}.artwork-metadata__category{margin-bottom:15px;color:var(--color-soft)}
-.artwork-metadata .type--body{font-size:18px;line-height:28px;margin-bottom:14px}
-.artwork-hero__exhibition{position:absolute;top:668px;left:64px;width:260px}
-.artwork-hero__exhibition .type{color:var(--color-soft);font-size:15px;line-height:23px;margin-bottom:17px}
-.artwork-hero__visual{position:absolute;left:376px;top:96px;width:1000px}
-.artwork-hero__image{width:1000px;height:638px;display:flex;align-items:center;justify-content:center}
-.artwork-hero__image img{width:100%;height:100%;object-fit:contain}
-.artwork-hero__visual figcaption{position:absolute;left:0;top:662px;width:775px}
-.artwork-hero__zoom{position:absolute;top:758px;right:64px;border:0;background:none;padding:0;font:700 15px/24px var(--font-body)}
-.purchase-panel{position:absolute;top:1055px;left:64px;width:1312px;height:128px}
-.purchase-panel__heading{position:absolute;top:33px;left:0}
-.purchase-panel__heading .type--h2{font-size:32px;line-height:42px}
-.purchase-panel__heading .type--caption{margin-top:16px}
-.purchase-panel .price-display{position:absolute;top:0;left:512px}
-.price-display .type--eyebrow{color:var(--color-muted)}
-.price-display .type--h1{font-size:36px;line-height:46px;margin-top:9px}
-.price-display .type--h2{font-size:32px;line-height:42px}
-.price-display .type--caption{margin-top:4px}
-.purchase-panel .a-button--solid{position:absolute;left:928px;top:22px;width:384px;height:72px;font-size:18px}
-.page-rule{position:absolute;left:64px;width:1312px}.page-rule--1{top:1284px}.page-rule--2{top:1626px}.page-rule--3{top:2088px}.page-rule--4{top:3236px}.page-rule--5{top:5251px}
-.editorial-section{position:absolute;left:0;width:1440px}
-.editorial-section--about{top:1380px;height:272px}.editorial-section--artist{top:1722px;height:260px}
-.editorial-section>.type--h1{position:absolute;top:0;left:64px}
-.editorial-section>.type--body{position:absolute;left:664px;top:9px;width:674px}
-.editorial-section--artist>.type--h2{position:absolute;top:133px;left:64px}
-.editorial-section--artist>.type--body{top:134px}
-.exhibition-feature{position:absolute;top:2184px;left:0;width:1440px;height:986px}
-.exhibition-feature__eyebrow{position:absolute;top:0;left:64px;color:var(--color-soft)}
-.exhibition-feature__title{position:absolute;top:43px;left:58px}
-.exhibition-feature__image{position:absolute;top:165px;left:64px;width:500px;height:752px;object-fit:contain}
-.exhibition-feature__caption{position:absolute;top:932px;left:64px;font-size:15px}
-.exhibition-feature__details{position:absolute;top:188px;left:680px;width:652px}
-.exhibition-feature__details>:nth-child(1){font-weight:700;font-size:16px;line-height:27px}
-.exhibition-feature__details>:nth-child(2){margin-top:19px;font-size:21px;line-height:32px}
-.exhibition-feature__details>:nth-child(3){margin-top:79px}
-.exhibition-feature__details>:nth-child(4){margin-top:170px}
-.exhibition-feature__details>:nth-child(5){display:block;margin-top:145px;font-size:18px;line-height:28px}
-.related-artworks{position:absolute;top:3332px;left:0;width:1440px;height:1936px}
-.related-artworks__title{position:absolute;top:0;left:64px}
-.related-artworks__artist{position:absolute;top:98px;left:64px}
-.related-artworks__intro{position:absolute;top:103px;left:814px;width:562px}
-.related-artwork{position:absolute}
-.related-artwork__image img{width:100%;height:100%;object-fit:contain}
-.related-artwork__details{position:absolute}
-.related-artwork__details>.type--h2{font-size:32px;line-height:42px}
-.related-artwork__details>.type--small{margin-top:11px}
-.related-artwork__details>.a-link{display:block;margin-top:18px;line-height:26px}
-.related-artwork--0{top:306px;left:64px;width:482px;height:710px}
-.related-artwork--0 .related-artwork__image{position:absolute;top:90px;width:482px;height:453px}
-.related-artwork--0 .related-artwork__details{top:567px;width:470px}
-.related-artwork--1{top:306px;left:624px;width:752px;height:710px}
-.related-artwork--1 .related-artwork__image{width:752px;height:543px}
-.related-artwork--1 .related-artwork__details{top:567px;width:725px}
-.related-artwork--2{top:1203px;left:64px;width:1312px;height:620px}
-.related-artwork--2 .related-artwork__image{width:710px;height:568px}
-.related-artwork--2 .related-artwork__details{top:154px;left:815px;width:497px}
-.related-artwork--2 .related-artwork__details>.a-link{margin-top:76px}
-.page-next{position:absolute;top:5347px;left:64px;width:1312px;display:flex;justify-content:space-between}
-.page-next .a-link{font-size:20px;line-height:29px}
-.site-footer{position:absolute;left:0;top:5543px;width:1440px;height:664px}
-.site-footer__eyebrow{position:absolute;left:64px;top:55px;font-weight:700}
-.site-footer__brand{position:absolute;left:50px;top:58px}
-.site-footer__social{position:absolute;right:64px;top:118px;text-align:right}
-.site-footer__social>.type--footerlink{margin-top:14px}
-.site-footer__rule{position:absolute;left:64px;width:1312px;background:rgba(14,14,14,.25)}
-.site-footer__rule--top{top:371px}.site-footer__rule--bottom{top:539px}
-.site-footer__links{position:absolute;top:426px;left:64px;width:1312px;display:flex;justify-content:space-between}
-.site-footer__links .a-link{font:500 29px/40px var(--font-heading);text-transform:none}
-.site-footer__address{position:absolute;top:575px;left:64px}
-.image-lightbox{position:fixed;z-index:300;inset:0;background:rgba(0,0,0,.94);display:flex;justify-content:center;align-items:center;padding:88px}
-.image-lightbox img{max-width:100%;max-height:100%;object-fit:contain}
-.image-lightbox button{position:absolute;top:36px;right:64px;border:0;background:none;color:white;font:700 16px/24px var(--font-body)}
+.artwork-page {
+  position: relative;
+  width: 1440px;
+  height: 6207px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: white;
+}
+.site-header {
+  position: absolute;
+  left: 64px;
+  top: 0;
+  width: 1312px;
+  height: 97px;
+}
+.site-header__brand {
+  position: absolute;
+  top: 34px;
+  left: 0;
+}
+.site-header__menu {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  font-size: 17px;
+  line-height: 25px;
+}
+.site-header__rule {
+  position: absolute;
+  bottom: 0;
+}
+.artwork-hero {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  width: 1440px;
+  height: 800px;
+}
+.artwork-hero__back {
+  position: absolute;
+  left: 64px;
+  top: 0;
+}
+.artwork-hero__title {
+  position: absolute;
+  top: 96px;
+  left: 58px;
+  width: 290px;
+}
+.artwork-hero__artist {
+  position: absolute;
+  top: 249px;
+  left: 64px;
+  width: 280px;
+}
+.artwork-hero__year {
+  position: absolute;
+  top: 289px;
+  left: 64px;
+  color: var(--color-soft);
+  font-size: 18px;
+  line-height: 28px;
+}
+.artwork-metadata {
+  position: absolute;
+  top: 406px;
+  left: 64px;
+  width: 264px;
+}
+.artwork-metadata .a-divider {
+  margin-bottom: 24px;
+}
+.artwork-metadata__category {
+  margin-bottom: 15px;
+  color: var(--color-soft);
+}
+.artwork-metadata .type--body {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 14px;
+}
+.artwork-hero__exhibition {
+  position: absolute;
+  top: 668px;
+  left: 64px;
+  width: 260px;
+}
+.artwork-hero__exhibition .type {
+  color: var(--color-soft);
+  font-size: 15px;
+  line-height: 23px;
+  margin-bottom: 17px;
+}
+.artwork-hero__visual {
+  position: absolute;
+  left: 376px;
+  top: 96px;
+  width: 1000px;
+}
+.artwork-hero__image {
+  width: 1000px;
+  height: 638px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artwork-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.artwork-hero__visual figcaption {
+  position: absolute;
+  left: 0;
+  top: 662px;
+  width: 775px;
+}
+.artwork-hero__zoom {
+  position: absolute;
+  top: 758px;
+  right: 64px;
+  border: 0;
+  background: none;
+  padding: 0;
+  font: 700 15px/24px var(--font-body);
+}
+.purchase-panel {
+  position: absolute;
+  top: 1055px;
+  left: 64px;
+  width: 1312px;
+  height: 128px;
+}
+.purchase-panel__heading {
+  position: absolute;
+  top: 33px;
+  left: 0;
+}
+.purchase-panel__heading .type--h2 {
+  font-size: 32px;
+  line-height: 42px;
+}
+.purchase-panel__heading .type--caption {
+  margin-top: 16px;
+}
+.purchase-panel .price-display {
+  position: absolute;
+  top: 0;
+  left: 512px;
+}
+.price-display .type--eyebrow {
+  color: var(--color-muted);
+}
+.price-display .type--h1 {
+  font-size: 36px;
+  line-height: 46px;
+  margin-top: 9px;
+}
+.price-display .type--h2 {
+  font-size: 32px;
+  line-height: 42px;
+}
+.price-display .type--caption {
+  margin-top: 4px;
+}
+.purchase-panel .a-button--solid {
+  position: absolute;
+  left: 928px;
+  top: 22px;
+  width: 384px;
+  height: 72px;
+  font-size: 18px;
+}
+.page-rule {
+  position: absolute;
+  left: 64px;
+  width: 1312px;
+}
+.page-rule--1 {
+  top: 1284px;
+}
+.page-rule--2 {
+  top: 1626px;
+}
+.page-rule--3 {
+  top: 2088px;
+}
+.page-rule--4 {
+  top: 3236px;
+}
+.page-rule--5 {
+  top: 5251px;
+}
+.editorial-section {
+  position: absolute;
+  left: 0;
+  width: 1440px;
+}
+.editorial-section--about {
+  top: 1380px;
+  height: 272px;
+}
+.editorial-section--artist {
+  top: 1722px;
+  height: 260px;
+}
+.editorial-section > .type--h1 {
+  position: absolute;
+  top: 0;
+  left: 64px;
+}
+.editorial-section > .type--body {
+  position: absolute;
+  left: 664px;
+  top: 9px;
+  width: 674px;
+}
+.editorial-section--artist > .type--h2 {
+  position: absolute;
+  top: 133px;
+  left: 64px;
+}
+.editorial-section--artist > .type--body {
+  top: 134px;
+}
+.exhibition-feature {
+  position: absolute;
+  top: 2184px;
+  left: 0;
+  width: 1440px;
+  height: 986px;
+}
+.exhibition-feature__eyebrow {
+  position: absolute;
+  top: 0;
+  left: 64px;
+  color: var(--color-soft);
+}
+.exhibition-feature__title {
+  position: absolute;
+  top: 43px;
+  left: 58px;
+}
+.exhibition-feature__image {
+  position: absolute;
+  top: 165px;
+  left: 64px;
+  width: 500px;
+  height: 752px;
+  object-fit: contain;
+}
+.exhibition-feature__caption {
+  position: absolute;
+  top: 932px;
+  left: 64px;
+  font-size: 15px;
+}
+.exhibition-feature__details {
+  position: absolute;
+  top: 188px;
+  left: 680px;
+  width: 652px;
+}
+.exhibition-feature__details > :nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+}
+.exhibition-feature__details > :nth-child(2) {
+  margin-top: 19px;
+  font-size: 21px;
+  line-height: 32px;
+}
+.exhibition-feature__details > :nth-child(3) {
+  margin-top: 79px;
+}
+.exhibition-feature__details > :nth-child(4) {
+  margin-top: 170px;
+}
+.exhibition-feature__details > :nth-child(5) {
+  display: block;
+  margin-top: 145px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.related-artworks {
+  position: absolute;
+  top: 3332px;
+  left: 0;
+  width: 1440px;
+  height: 1936px;
+}
+.related-artworks__title {
+  position: absolute;
+  top: 0;
+  left: 64px;
+}
+.related-artworks__artist {
+  position: absolute;
+  top: 98px;
+  left: 64px;
+}
+.related-artworks__intro {
+  position: absolute;
+  top: 103px;
+  left: 814px;
+  width: 562px;
+}
+.related-artwork {
+  position: absolute;
+}
+.related-artwork__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.related-artwork__details {
+  position: absolute;
+}
+.related-artwork__details > .type--h2 {
+  font-size: 32px;
+  line-height: 42px;
+}
+.related-artwork__details > .type--small {
+  margin-top: 11px;
+}
+.related-artwork__details > .a-link {
+  display: block;
+  margin-top: 18px;
+  line-height: 26px;
+}
+.related-artwork--0 {
+  top: 306px;
+  left: 64px;
+  width: 482px;
+  height: 710px;
+}
+.related-artwork--0 .related-artwork__image {
+  position: absolute;
+  top: 90px;
+  width: 482px;
+  height: 453px;
+}
+.related-artwork--0 .related-artwork__details {
+  top: 567px;
+  width: 470px;
+}
+.related-artwork--1 {
+  top: 306px;
+  left: 624px;
+  width: 752px;
+  height: 710px;
+}
+.related-artwork--1 .related-artwork__image {
+  width: 752px;
+  height: 543px;
+}
+.related-artwork--1 .related-artwork__details {
+  top: 567px;
+  width: 725px;
+}
+.related-artwork--2 {
+  top: 1203px;
+  left: 64px;
+  width: 1312px;
+  height: 620px;
+}
+.related-artwork--2 .related-artwork__image {
+  width: 710px;
+  height: 568px;
+}
+.related-artwork--2 .related-artwork__details {
+  top: 154px;
+  left: 815px;
+  width: 497px;
+}
+.related-artwork--2 .related-artwork__details > .a-link {
+  margin-top: 76px;
+}
+.page-next {
+  position: absolute;
+  top: 5347px;
+  left: 64px;
+  width: 1312px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-next .a-link {
+  font-size: 20px;
+  line-height: 29px;
+}
+.site-footer {
+  position: absolute;
+  left: 0;
+  top: 5543px;
+  width: 1440px;
+  height: 664px;
+}
+.site-footer__eyebrow {
+  position: absolute;
+  left: 64px;
+  top: 55px;
+  font-weight: 700;
+}
+.site-footer__brand {
+  position: absolute;
+  left: 50px;
+  top: 58px;
+}
+.site-footer__social {
+  position: absolute;
+  right: 64px;
+  top: 118px;
+  text-align: right;
+}
+.site-footer__social > .type--footerlink {
+  margin-top: 14px;
+}
+.site-footer__rule {
+  position: absolute;
+  left: 64px;
+  width: 1312px;
+  background: rgba(14, 14, 14, 0.25);
+}
+.site-footer__rule--top {
+  top: 371px;
+}
+.site-footer__rule--bottom {
+  top: 539px;
+}
+.site-footer__links {
+  position: absolute;
+  top: 426px;
+  left: 64px;
+  width: 1312px;
+  display: flex;
+  justify-content: space-between;
+}
+.site-footer__links .a-link {
+  font: 500 29px/40px var(--font-heading);
+  text-transform: none;
+}
+.site-footer__address {
+  position: absolute;
+  top: 575px;
+  left: 64px;
+}
+.image-lightbox {
+  position: fixed;
+  z-index: 300;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.94);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 88px;
+}
+.image-lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.image-lightbox button {
+  position: absolute;
+  top: 36px;
+  right: 64px;
+  border: 0;
+  background: none;
+  color: white;
+  font: 700 16px/24px var(--font-body);
+}

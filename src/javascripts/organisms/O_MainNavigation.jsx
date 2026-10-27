@@ -16,21 +16,46 @@ export default function O_MainNavigation({ isOpen, onClose }) {
     if (!isOpen) return
     const previous = document.activeElement
     closeRef.current?.focus()
-    const handleKeyDown = (event) => { if (event.key === 'Escape') onClose() }
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') onClose()
+    }
     document.addEventListener('keydown', handleKeyDown)
-    return () => { document.removeEventListener('keydown', handleKeyDown); previous?.focus?.() }
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+      previous?.focus?.()
+    }
   }, [isOpen, onClose])
   if (!isOpen) return null
-  return <div role="dialog" aria-modal="true" aria-label="Перекличка — меню сайта" className="main-navigation">
-    <div className="main-navigation__top">
-      <A_Typography variant="brand">Поляна</A_Typography>
-      <A_Button ref={closeRef} onClick={onClose}>ЗАКРЫТЬ&nbsp;&nbsp; ×</A_Button>
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Перекличка — меню сайта"
+      className="main-navigation"
+    >
+      <div className="main-navigation__top">
+        <A_Typography variant="brand">Поляна</A_Typography>
+        <A_Button
+          ref={closeRef}
+          onClick={onClose}
+        >
+          ЗАКРЫТЬ&nbsp;&nbsp; ×
+        </A_Button>
+      </div>
+      <div className="main-navigation__rule" />
+      <A_Typography variant="eyebrow">ПЕРЕКЛИЧКА / 04 ГОЛОСА</A_Typography>
+      <nav aria-label="Основные разделы">
+        {ITEMS.map(([number, title, description, offset]) => (
+          <M_NavigationItem
+            key={number}
+            number={number}
+            title={title}
+            description={description}
+            offset={offset}
+          />
+        ))}
+      </nav>
+      <div className="main-navigation__bottom" />
     </div>
-    <div className="main-navigation__rule" />
-    <A_Typography variant="eyebrow">ПЕРЕКЛИЧКА / 04 ГОЛОСА</A_Typography>
-    <nav aria-label="Основные разделы">
-      {ITEMS.map(([number, title, description, offset]) => <M_NavigationItem key={number} number={number} title={title} description={description} offset={offset} />)}
-    </nav>
-    <div className="main-navigation__bottom" />
-  </div>
+  )
 }

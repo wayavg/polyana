@@ -22,7 +22,31 @@ export const ARTWORK_LIGHT = {
 }
 
 export const RELATED_ARTWORKS = [
-  { id: 'the-room', title: 'The room', artist: 'Анна Гончарова', year: '2025', medium: 'Холст, масло', dimensions: '80 × 80 см', image: theRoomImage },
-  { id: 'movement', title: 'Movement', artist: 'Анна Гончарова', year: '2025', medium: 'Баннерная ткань, масло, акрил', dimensions: '80 × 120 см', image: movementImage },
-  { id: 'perspective', title: 'Perspective', artist: 'Анна Гончарова', year: '2025', medium: 'Холст, масло', dimensions: '85 × 100 см', image: perspectiveImage }
+  {
+    id: 'the-room',
+    title: 'The room',
+    artist: 'Анна Гончарова',
+    year: '2025',
+    medium: 'Холст, масло',
+    dimensions: '80 × 80 см',
+    image: theRoomImage
+  },
+  {
+    id: 'movement',
+    title: 'Movement',
+    artist: 'Анна Гончарова',
+    year: '2025',
+    medium: 'Баннерная ткань, масло, акрил',
+    dimensions: '80 × 120 см',
+    image: movementImage
+  },
+  {
+    id: 'perspective',
+    title: 'Perspective',
+    artist: 'Анна Гончарова',
+    year: '2025',
+    medium: 'Холст, масло',
+    dimensions: '85 × 100 см',
+    image: perspectiveImage
+  }
 ]
